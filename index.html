@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To Tailwind</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Code -->
+    <header class="bg-gray-900 text-white p-4 ">
+        <div class="container mx-auto flex items-center justify-between px-6 py-3">
+            <div class="logo">
+                <a href="#">My Website</a>
+            </div>
+            <nav id="nav-toggle" class="hidden md:block">
+                <a href="#" class="px-4 py-2 m-2 text-white hover:bg-gray-800 rounded-lg">Home</a>
+                <a href="#" class="px-4 py-2 m-2 text-white hover:bg-gray-800 rounded-lg">About</a>
+                <a href="#" class="px-4 py-2 m-2 text-white hover:bg-gray-800 rounded-lg">Blog</a>
+                <a href="#" class="px-4 py-2 m-2 text-white hover:bg-gray-800 rounded-lg">FAQ</a>
+                <a href="#" class="px-4 py-2 m-2 text-white hover:bg-gray-800 rounded-lg">Get in Touch</a>
+            </nav>
+            <button class="md:hidden px-4 py-2 m-2 text-white bg-gray-800 rounded-lg">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- End Header Code -->
+
+    <!-- 2 Column Image Section  Code -->
+    <section class="bg-slate-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <img src="img/rat.jpg" alt="image" class="w-full rounded-lg">
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <img src="img/seagull.jpg" alt="image" class="w-full rounded-lg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 2 Column Image Section Code -->
+
+    <!-- 3 Column Section Code -->
+    <section class="bg-slate-200 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 1</h2>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in
+                            bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 3 Column Section Code -->
+
+    <!-- 2 Column Section Code -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-slate-200 rounded-lg p-10">
+                        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+                            magna
+                            in bibendum malesuada, velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-slate-200 rounded-lg p-10">
+                        <p class="text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+                            magna
+                            in bibendum malesuada, velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End  2 Column Section Code -->
+
+
+
+    <!-- 4 Column Section Code -->
+    <section class="bg-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-8">
+                        <img src="img/watch1.jpg" alt="product1" class="w-full h-64 ">
+                        <h2 class="text-lg font-medium mt-4">Product 1</h2>
+                        <p class="text-gray-600 mb-4">$50</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-8">
+                        <img src="img/watch2.jpg" alt="product2" class="w-full h-64">
+                        <h2 class="text-lg font-medium mt-4">Product 2</h2>
+                        <p class="text-gray-600 mb-4">$75</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-8">
+                        <img src="img/watch3.jpg" alt="product3" class="w-full h-64">
+                        <h2 class="text-lg font-medium mt-4">Product 3</h2>
+                        <p class="text-gray-600 mb-4">$100</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add to
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-8">
+                        <img src="img/watch4.jpg" alt="product4" class="w-full h-64">
+                        <h2 class="text-lg font-medium mt-4">Product 4</h2>
+                        <p class="text-gray-600 mb-4">$125</p>
+                        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End 4 Column Section Code -->
+
+    <!-- 4 Column Section Code -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/4 p-4">
+                    <div class="bg-slate-200 rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 1</h2>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in
+                            bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <div class="bg-slate-200 rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <div class="bg-slate-200 rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <div class="bg-slate-200 rounded-lg p-6">
+                        <h2 class="text-lg font-medium mb-4">Column 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna in bibendum
+                            malesuada,
+                            velit risus tincidunt velit, id accumsan nibh augue quis elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 4 Column Section Code -->
+
+    <!-- Footer Code -->
+    <footer class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto flex flex-wrap items-center">
+            <div class="w-full md:w-100% text-center md:text-center">
+                <p class="text-sm">Copyright ©2023 | Designed By Aziz</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End Footer Code -->
+</body>
+
+</html>
